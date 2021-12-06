@@ -1335,6 +1335,11 @@
   resolved "https://registry.yarnpkg.com/@emotion/weak-memoize/-/weak-memoize-0.2.5.tgz#8eed982e2ee6f7f4e44c253e12962980791efd46"
   integrity sha512-6U71C2Wp7r5XtFtQzYrW5iKFT67OixrSxjI4MptCHzdSVlgabczzqLe0ZSgnub/5Kp4hSbpDB1tMytZY9pwxxA==
 
+"@fontsource/quicksand@^4.5.1":
+  version "4.5.1"
+  resolved "https://registry.yarnpkg.com/@fontsource/quicksand/-/quicksand-4.5.1.tgz#2de9e43289f0ca697a753537c05c6dc830988374"
+  integrity sha512-s40Umas42fr43/zHprNqEXtbPzVEAoX1iEJnXuH/Cz7b1/JXc0PFlzbFtyPMTNDmOwu6KARIgtRfKDvWpObFvA==
+
 "@gar/promisify@^1.0.1":
   version "1.1.2"
   resolved "https://registry.yarnpkg.com/@gar/promisify/-/promisify-1.1.2.tgz#30aa825f11d438671d585bd44e7fd564535fc210"
