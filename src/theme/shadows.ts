@@ -1,5 +1,14 @@
 import { Shadows } from '@mui/material/styles/shadows';
 
+declare module '@mui/material/styles/shadows' {
+  export interface Shadows {
+    divider: string;
+    thinDivider: string;
+    topDivider: string;
+    card: string;
+  }
+}
+
 const shadows: Shadows = {
   divider: 'inset 0px -1px 0px rgba(0, 0, 0, 0.1)',
   thinDivider: 'inset 0px -0.5px 0px rgba(0, 0, 0, 0.1)',

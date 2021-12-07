@@ -10,5 +10,3 @@ export const peepTheme = createTheme({
   components,
   shadows,
 });
-
-peepTheme.shadows = shadows as typeof shadows;
