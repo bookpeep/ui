@@ -10,9 +10,17 @@ const MuiButton: Components['MuiButton'] = {
 
   defaultProps: {
     disableElevation: true,
+    variant: 'contained',
   },
 
   variants: [
+    {
+      props: { variant: 'contained' },
+      style: {
+        textTransform: 'none',
+      },
+    },
+
     {
       props: { variant: 'outlined', color: 'primary' },
       style: {
