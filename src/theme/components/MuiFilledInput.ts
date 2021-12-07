@@ -1,9 +1,9 @@
-import { Components } from '@mui/material';
+import { Components } from "@mui/material";
 
-const MuiFilledInput: Components['MuiFilledInput'] = {
+const MuiFilledInput: Components["MuiFilledInput"] = {
   styleOverrides: {
     root: {
-      borderRadius: '8px',
+      borderRadius: "8px",
     },
   },
 

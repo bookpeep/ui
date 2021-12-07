@@ -1,28 +1,28 @@
-import { Components } from '@mui/material';
-import palette from '../palette';
+import { Components } from "@mui/material";
+import palette from "../palette";
 
-const MuiButton: Components['MuiButton'] = {
+const MuiButton: Components["MuiButton"] = {
   styleOverrides: {
     root: {
-      textTransform: 'none',
+      textTransform: "none",
     },
   },
 
   defaultProps: {
     disableElevation: true,
-    variant: 'contained',
+    variant: "contained",
   },
 
   variants: [
     {
-      props: { variant: 'contained' },
+      props: { variant: "contained" },
       style: {
-        textTransform: 'none',
+        textTransform: "none",
       },
     },
 
     {
-      props: { variant: 'outlined', color: 'primary' },
+      props: { variant: "outlined", color: "primary" },
       style: {
         borderColor: palette.primary.main,
       },

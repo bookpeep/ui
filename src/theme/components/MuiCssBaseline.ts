@@ -1,9 +1,9 @@
-import { Components } from '@mui/material';
+import { Components } from "@mui/material";
 
-const MuiCssBaseline: Components['MuiCssBaseline'] = {
+const MuiCssBaseline: Components["MuiCssBaseline"] = {
   styleOverrides: {
-    'html, body, #root': {
-      height: '100%',
+    "html, body, #root": {
+      height: "100%",
     },
   },
 };

@@ -43,12 +43,6 @@
       "pre-commit": "tsdx lint"
     }
   },
-  "prettier": {
-    "printWidth": 80,
-    "semi": true,
-    "singleQuote": true,
-    "trailingComma": "es5"
-  },
   "devDependencies": {
     "@babel/core": "^7.16.0",
     "@emotion/react": "^11.7.0",

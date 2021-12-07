@@ -1,10 +1,10 @@
-import { Components } from '@mui/material';
+import { Components } from "@mui/material";
 
-const MuiAccordion: Components['MuiAccordion'] = {
+const MuiAccordion: Components["MuiAccordion"] = {
   styleOverrides: {
     root: {
-      '&:before': {
-        display: 'none',
+      "&:before": {
+        display: "none",
       },
     },
   },

@@ -1,7 +1,7 @@
-import { Components } from '@mui/material';
-import shadows from '../shadows';
+import { Components } from "@mui/material";
+import shadows from "../shadows";
 
-const MuiTabs: Components['MuiTabs'] = {
+const MuiTabs: Components["MuiTabs"] = {
   styleOverrides: {
     root: {
       boxShadow: shadows.divider,

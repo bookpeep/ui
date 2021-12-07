@@ -1,6 +1,6 @@
-import React from 'react';
-import { SvgIcon } from '@mui/material';
-import { SvgIconPropsWithBold } from './types';
+import React from "react";
+import { SvgIcon } from "@mui/material";
+import { SvgIconPropsWithBold } from "./types";
 
 const Thick = () => (
   <>

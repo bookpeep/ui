@@ -1,4 +1,4 @@
-import { SvgIconProps } from '@mui/material';
+import { SvgIconProps } from "@mui/material";
 
 export type SvgIconPropsWithBold = SvgIconProps & {
   bold: boolean;

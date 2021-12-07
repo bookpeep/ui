@@ -1,13 +1,13 @@
-import { Components } from '@mui/material';
-import palette from '../palette';
-import { selected } from './selectors';
+import { Components } from "@mui/material";
+import palette from "../palette";
+import { selected } from "./selectors";
 
-const MuiToggleButton: Components['MuiToggleButton'] = {
+const MuiToggleButton: Components["MuiToggleButton"] = {
   styleOverrides: {
     root: {
       color: palette.text.primary,
-      fontSize: '1rem',
-      textTransform: 'none',
+      fontSize: "1rem",
+      textTransform: "none",
       borderColor: palette.primary.main,
 
       [selected]: {
@@ -15,13 +15,13 @@ const MuiToggleButton: Components['MuiToggleButton'] = {
         color: palette.text.blank,
         backgroundColor: palette.primary.main,
 
-        '&:hover': {
+        "&:hover": {
           color: palette.text.blank,
           backgroundColor: palette.primary.main,
         },
       },
 
-      '&:hover, &:active': {
+      "&:hover, &:active": {
         color: palette.text.primary,
         backgroundColor: palette.primary.light,
       },

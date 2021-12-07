@@ -1,5 +1,5 @@
-import React from 'react';
-import { SvgIcon, SvgIconProps } from '@mui/material';
+import React from "react";
+import { SvgIcon, SvgIconProps } from "@mui/material";
 
 export default function DirectionPointer(props: SvgIconProps) {
   return (

@@ -1,6 +1,6 @@
-import React from 'react';
-import { SvgIcon, SvgIconProps } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import React from "react";
+import { SvgIcon, SvgIconProps } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const ArrowUp = (props: SvgIconProps) => (
   <SvgIcon {...props}>
@@ -8,10 +8,10 @@ const ArrowUp = (props: SvgIconProps) => (
   </SvgIcon>
 );
 
-const ArrowRight = styled(ArrowUp)({ transform: 'rotate(90deg)' });
+const ArrowRight = styled(ArrowUp)({ transform: "rotate(90deg)" });
 
-const ArrowDown = styled(ArrowUp)({ transform: 'rotate(180deg)' });
+const ArrowDown = styled(ArrowUp)({ transform: "rotate(180deg)" });
 
-const ArrowLeft = styled(ArrowUp)({ transform: 'rotate(270deg)' });
+const ArrowLeft = styled(ArrowUp)({ transform: "rotate(270deg)" });
 
 export { ArrowUp, ArrowRight, ArrowDown, ArrowLeft };

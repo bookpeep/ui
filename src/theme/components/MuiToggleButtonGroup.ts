@@ -1,11 +1,11 @@
-import { Components } from '@mui/material';
-import palette from '../palette';
+import { Components } from "@mui/material";
+import palette from "../palette";
 
-const MuiToggleButtonGroup: Components['MuiToggleButtonGroup'] = {
+const MuiToggleButtonGroup: Components["MuiToggleButtonGroup"] = {
   styleOverrides: {
     root: {
       backgroundColor: palette.bg.blank,
-      maxHeight: '38px',
+      maxHeight: "38px",
     },
   },
 };

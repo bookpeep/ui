@@ -1,10 +1,10 @@
-import React from 'react';
-import { Meta, Story } from '@storybook/react';
-import { Button, ButtonProps } from '@mui/material';
-import ThemeProvider from './ThemeProvider';
+import React from "react";
+import { Meta, Story } from "@storybook/react";
+import { Button, ButtonProps } from "@mui/material";
+import ThemeProvider from "./ThemeProvider";
 
 const meta: Meta<ButtonProps> = {
-  title: 'Button',
+  title: "Button",
   component: Button,
 
   //   parameters: {
@@ -33,7 +33,7 @@ export default meta;
 const Template: Story<ButtonProps> = (args) => <Button {...args} />;
 
 export const Default = Template.bind({});
-Default.args = { children: 'Default button' };
+Default.args = { children: "Default button" };
 
 export const Outlined = Template.bind({});
-Outlined.args = { children: 'Outlined Button', variant: 'outlined' };
+Outlined.args = { children: "Outlined Button", variant: "outlined" };

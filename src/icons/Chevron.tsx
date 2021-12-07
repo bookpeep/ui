@@ -1,6 +1,6 @@
-import React from 'react';
-import { SvgIcon, SvgIconProps } from '@mui/material';
-import { styled } from '@mui/material/styles';
+import React from "react";
+import { SvgIcon, SvgIconProps } from "@mui/material";
+import { styled } from "@mui/material/styles";
 
 const ChevronUp = (props: SvgIconProps) => (
   <SvgIcon {...props}>
@@ -8,10 +8,10 @@ const ChevronUp = (props: SvgIconProps) => (
   </SvgIcon>
 );
 
-const ChevronRight = styled(ChevronUp)({ transform: 'rotate(90deg)' });
+const ChevronRight = styled(ChevronUp)({ transform: "rotate(90deg)" });
 
-const ChevronDown = styled(ChevronUp)({ transform: 'rotate(180deg)' });
+const ChevronDown = styled(ChevronUp)({ transform: "rotate(180deg)" });
 
-const ChevronLeft = styled(ChevronUp)({ transform: 'rotate(270deg)' });
+const ChevronLeft = styled(ChevronUp)({ transform: "rotate(270deg)" });
 
 export { ChevronUp, ChevronRight, ChevronDown, ChevronLeft };

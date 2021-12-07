@@ -1,6 +1,6 @@
-import React from 'react';
-import { CssBaseline, ThemeProvider as MuiThemeProvider } from '@mui/material';
-import { peepTheme } from '../src';
+import React from "react";
+import { CssBaseline, ThemeProvider as MuiThemeProvider } from "@mui/material";
+import { peepTheme } from "../src";
 
 const StoryLayout = ({ children }) => (
   <MuiThemeProvider theme={peepTheme}>
@@ -10,7 +10,7 @@ const StoryLayout = ({ children }) => (
 );
 
 export const parameters = {
-  actions: { argTypesRegex: '^on.*' },
+  actions: { argTypesRegex: "^on.*" },
 };
 
 export const decorators = [
