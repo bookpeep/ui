@@ -1,11 +1,13 @@
 import { PaletteMode, SimplePaletteColorOptions } from "@mui/material";
 import { TypeText } from "@mui/material/styles/createPalette";
 
+// declare means you are extending the module
 declare module "@mui/material/styles/createPalette" {
   export interface PaletteColor {
     lighter?: string;
   }
   export interface SimplePaletteColorOptions {
+    // "?" means it is optional
     lighter?: string;
   }
 
@@ -38,14 +40,54 @@ declare module "@mui/material/styles/createPalette" {
   }
 }
 
-const navy = "#0A1F44";
+const mainColors = {
+  peepBlue: "#4048D6",
+  peepDarkBlue: "#242BA8",
+  peepBlueDisabled: "rgba(64, 71, 214, .4)",
+  navyBlue: "#0A1F44",
+  gray: "#4E5D78",
+  lightGray: "#4E5D78",
+  disabled: "repeating-linear-gradient( -45deg, #eeeeee73, #eeeeee73 1px, #c4ddfdad 1px, #c4ddfda1 7px )"
+};
 
-const peepBlue = "#4048D6";
-const peepBlueHalfOpacity = "rgba(64, 72, 214, 0.5)";
-const peepBlueVeryLight = "#E2EFFF";
+const lightColors = {
+  yellow: "#FCF3E4",
+  red: "#FFE7EB",
+  blue: "#EAF4FF",
+  green: "#E4FAF7",
+};
+
+const bgColors = {
+  blank: "#FFFFFF",
+  secondary: "#F7F8FD",
+};
+
+const additionalColors = {
+  blue: "#3636CF",
+  secondaryBlue: "#E7E9FF",
+  green: "#53BFB0",
+  secondaryGreen: "#E4FAF7",
+  skyBlue: "#6CA1EA",
+  secondarySkyBlue: "#EEFAFF",
+  tuscany: "#EAAA39",
+  secondaryTuscany: "#FFEED1",
+  purple: "#AD34E5",
+  secondaryPurple: "#F6E3FF",
+  gray: "#919AAB",
+};
+
+const errorColors = {
+  error: "#F43319",
+  secondaryError: "#DB230A",
+  errorDisabled: "rgba(244, 51, 25, 0.4)",
+  warning: "#FFCC00",
+  secondaryWarning: "#FFE375",
+  warningDisabled: "rgba(255, 204, 0, 0.4)",
+};
+
+
 
 const skyBlue = "#F7F8FD";
-// const skyBlue = "skyblue";
 
 const black = "#000000";
 const white = "#FFFFFF";
@@ -58,18 +100,30 @@ const greyAlert = "rgba(78, 93, 120, 0.34)";
 const mode: PaletteMode = "light";
 
 const primary: SimplePaletteColorOptions = {
-  main: peepBlue,
-  light: peepBlueHalfOpacity,
-  lighter: peepBlueVeryLight,
+  main: mainColors.peepBlue,
+  dark: mainColors.peepDarkBlue,
+  light: mainColors.peepBlueDisabled,
 };
 
 const secondary: SimplePaletteColorOptions = {
-  main: navy,
+  main: mainColors.navyBlue,
+};
+
+const error: SimplePaletteColorOptions = {
+  main: errorColors.error,
+  dark: errorColors.secondaryError,
+  light: errorColors.errorDisabled
+};
+
+const warning: SimplePaletteColorOptions = {
+  main: errorColors.warning,
+  dark: errorColors.secondaryWarning,
+  light: errorColors.warningDisabled
 };
 
 const text: TypeText = {
-  primary: navy,
-  secondary: peepBlue,
+  primary: mainColors.navyBlue,
+  secondary: mainColors.peepBlue,
   disabled: disabledGrey,
   blank: white,
   label: labelGrey,
@@ -97,6 +151,8 @@ const palette = {
   bg,
   text,
   border,
+  error,
+  warning,
   common,
 };
 

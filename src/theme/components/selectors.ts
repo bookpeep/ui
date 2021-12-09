@@ -1,5 +1,5 @@
-const selected = "&.Mui-selected";
-const disabled = "&.Mui-disabled";
-const expanded = "&.Mui-expanded";
+const muiSelected = "&.Mui-selected";
+const muiDisabled = "&.Mui-disabled";
+const muiExpanded = "&.Mui-expanded";
 
-export { selected, disabled, expanded };
+export { muiSelected, muiDisabled, muiExpanded };
