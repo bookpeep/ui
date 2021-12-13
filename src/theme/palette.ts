@@ -3,13 +3,6 @@ import { TypeText } from "@mui/material/styles/createPalette";
 
 // declare means you are extending the module
 declare module "@mui/material/styles/createPalette" {
-  export interface PaletteColor {
-    lighter?: string;
-  }
-  export interface SimplePaletteColorOptions {
-    // "?" means it is optional
-    lighter?: string;
-  }
 
   export interface TypeText {
     blank: string;

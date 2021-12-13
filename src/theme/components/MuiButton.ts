@@ -3,19 +3,9 @@ import palette from "../palette";
 import shadows from "../shadows";
 import { muiDisabled } from "./selectors";
 
-declare module "@mui/material/styles/createPalette" {
-  export interface PaletteColor {
-    lighter?: string;
-  }
-}
-
 const MuiButton: Components["MuiButton"] = {
   styleOverrides: {
     root: {
-      textTransform: "none",
-      fontWeight: "500",
-      fontSize: "16px",
-      lineHeight: "20px",
       minHeight: "48px",
       minWidth: "120px",
       borderRadius: "8px",
@@ -25,8 +15,6 @@ const MuiButton: Components["MuiButton"] = {
   defaultProps: {
     disableElevation: true,
     variant: "contained",
-    // TODO: Remove if not needed
-    color: "primary",
   },
 
   variants: [
