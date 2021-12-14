@@ -6,61 +6,92 @@ import "@fontsource/quicksand/700.css";
 import { TypographyVariantsOptions } from "@mui/material";
 import palette from "./palette";
 
+declare module "@mui/material/styles" {
+  export interface TypographyVariants {
+    primary: React.CSSProperties;
+    secondary: React.CSSProperties;
+    link: React.CSSProperties;
+  }
+
+  export interface TypographyVariantsOptions {
+    primary: React.CSSProperties;
+    secondary: React.CSSProperties;
+    link: React.CSSProperties;
+  }
+}
+
+declare module "@mui/material/Typography" {
+  export interface TypographyPropsVariantOverrides {
+    primary: true;
+    secondary: true;
+    link: true;
+
+    h6: false;
+    subtitle1: false;
+    subtitle2: false;
+    body1: false;
+    body2: false;
+    caption: false;
+    overline: false;
+  }
+}
+
 const typography: TypographyVariantsOptions = {
   fontFamily: "Quicksand",
 
+  // If no unit is provided line height is automatically fontSize * lineHeight
+  // Aaaand, in the designs the line height is always 1.25 times the font size
   allVariants: {
-    color: palette.text?.primary,
-    fontWeight: "500",
-    userSelect: "none",
+    lineHeight: 1.25,
   },
 
   h1: {
     fontSize: "1.5rem",
-    fontWeight: "700",
+    fontWeight: 700,
   },
 
   h2: {
     fontSize: "1.25rem",
-    fontWeight: "700",
+    fontWeight: 700,
   },
 
   h3: {
     fontSize: "1.125rem",
-    fontWeight: "700",
+    fontWeight: 700,
   },
 
   h4: {
     fontSize: "1rem",
-    fontWeight: "700",
+    fontWeight: 700,
   },
 
   h5: {
+    fontSize: "1rem",
+    fontWeight: 500,
+  },
+
+  primary: {
     fontSize: "0.875rem",
-    fontWeight: "700",
+    fontWeight: 400,
   },
 
-  subtitle1: {
-    fontSize: "1rem",
-    fontWeight: "700",
+  secondary: {
+    fontSize: "0.75rem",
+    fontWeight: 400,
   },
 
-  subtitle2: {
-    fontSize: "1rem",
-    fontWeight: "400",
-    color: palette.text?.label,
+  link: {
+    fontSize: "0.875rem",
+    fontWeight: 500,
+    textDecoration: "underline",
+    color: palette.primary.main,
+    cursor: "pointer",
   },
 
   button: {
+    fontSize: "1rem",
+    fontWeight: 500,
     textTransform: "none",
-    fontWeight: "500",
-    fontSize: "16px",
-    lineHeight: "20px",
-  },
-
-  body1: {
-    fontSize: "0.875rem",
-    fontWeight: "400",
   },
 };
 
