@@ -6,6 +6,9 @@ declare module "@mui/material/styles/shadows" {
     thinDivider: string;
     topDivider: string;
     card: string;
+    primaryButtonHover: string;
+    errorButtonHover: string;
+    warningButtonHover: string;
   }
 }
 
@@ -14,6 +17,9 @@ const shadows: Shadows = {
   thinDivider: "inset 0px -0.5px 0px rgba(0, 0, 0, 0.1)",
   topDivider: "inset 0px 1px 0px rgba(0, 0, 0, 0.1)",
   card: "0px 10px 44px rgba(10, 31, 68, 0.1)",
+  primaryButtonHover: "0px 12px 34px rgba(36, 43, 168, 0.34)",
+  errorButtonHover: "0px 8px 34px rgba(10, 31, 68, 0.08)",
+  warningButtonHover: "0px 8px 34px rgba(10, 31, 68, 0.08)",
 
   // Default shadows, only change if you know what you doing
   0: "none",

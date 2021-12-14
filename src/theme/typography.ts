@@ -52,7 +52,10 @@ const typography: TypographyVariantsOptions = {
   },
 
   button: {
-    fontSize: "1rem",
+    textTransform: "none",
+    fontWeight: "500",
+    fontSize: "16px",
+    lineHeight: "20px",
   },
 
   body1: {
