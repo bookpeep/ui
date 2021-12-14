@@ -1,6 +1,6 @@
 import { Components } from "@mui/material";
 import palette from "../palette";
-import { selected } from "./selectors";
+import { muiSelected } from "./selectors";
 
 const MuiToggleButton: Components["MuiToggleButton"] = {
   styleOverrides: {
@@ -10,7 +10,7 @@ const MuiToggleButton: Components["MuiToggleButton"] = {
       textTransform: "none",
       borderColor: palette.primary.main,
 
-      [selected]: {
+      [muiSelected]: {
         fontWeight: 500,
         color: palette.text.blank,
         backgroundColor: palette.primary.main,

@@ -1,6 +1,6 @@
 import { Components } from "@mui/material";
 import palette from "../palette";
-import { selected } from "./selectors";
+import { muiSelected } from "./selectors";
 
 const MuiTab: Components["MuiTab"] = {
   styleOverrides: {
@@ -10,7 +10,7 @@ const MuiTab: Components["MuiTab"] = {
       color: palette.text.primary,
       textTransform: "none",
 
-      [selected]: {
+      [muiSelected]: {
         fontWeight: 600,
       },
     },
