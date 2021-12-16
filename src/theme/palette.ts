@@ -3,7 +3,6 @@ import { TypeText } from "@mui/material/styles/createPalette";
 
 // declare means you are extending the module
 declare module "@mui/material/styles/createPalette" {
-
   export interface TypeText {
     blank: string;
     label: string;
@@ -40,33 +39,8 @@ const mainColors = {
   navyBlue: "#0A1F44",
   gray: "#4E5D78",
   lightGray: "#4E5D78",
-  disabled: "repeating-linear-gradient( -45deg, #eeeeee73, #eeeeee73 1px, #c4ddfdad 1px, #c4ddfda1 7px )"
-};
-
-const lightColors = {
-  yellow: "#FCF3E4",
-  red: "#FFE7EB",
-  blue: "#EAF4FF",
-  green: "#E4FAF7",
-};
-
-const bgColors = {
-  blank: "#FFFFFF",
-  secondary: "#F7F8FD",
-};
-
-const additionalColors = {
-  blue: "#3636CF",
-  secondaryBlue: "#E7E9FF",
-  green: "#53BFB0",
-  secondaryGreen: "#E4FAF7",
-  skyBlue: "#6CA1EA",
-  secondarySkyBlue: "#EEFAFF",
-  tuscany: "#EAAA39",
-  secondaryTuscany: "#FFEED1",
-  purple: "#AD34E5",
-  secondaryPurple: "#F6E3FF",
-  gray: "#919AAB",
+  disabled:
+    "repeating-linear-gradient( -45deg, #eeeeee73, #eeeeee73 1px, #c4ddfdad 1px, #c4ddfda1 7px )",
 };
 
 const errorColors = {
@@ -77,8 +51,6 @@ const errorColors = {
   secondaryWarning: "#FFE375",
   warningDisabled: "rgba(255, 204, 0, 0.4)",
 };
-
-
 
 const skyBlue = "#F7F8FD";
 
@@ -105,13 +77,13 @@ const secondary: SimplePaletteColorOptions = {
 const error: SimplePaletteColorOptions = {
   main: errorColors.error,
   dark: errorColors.secondaryError,
-  light: errorColors.errorDisabled
+  light: errorColors.errorDisabled,
 };
 
 const warning: SimplePaletteColorOptions = {
   main: errorColors.warning,
   dark: errorColors.secondaryWarning,
-  light: errorColors.warningDisabled
+  light: errorColors.warningDisabled,
 };
 
 const text: TypeText = {

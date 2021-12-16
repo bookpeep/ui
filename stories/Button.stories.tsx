@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { Button, ButtonProps } from "@mui/material";
 
 const meta: Meta<ButtonProps> = {
-  title: "Button",
+  title: "Components/Button",
   component: Button,
   argTypes: {
     color: {
