@@ -1,9 +1,9 @@
 import { SvgIconProps } from "@mui/material";
 
 export type SvgIconPropsWithBold = SvgIconProps & {
-  bold: boolean;
+  bold?: boolean;
 };
 
 export type SvgIconPropsWithSolid = SvgIconProps & {
-  solid: boolean;
+  solid?: boolean;
 };
