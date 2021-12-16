@@ -8,6 +8,7 @@ declare module "@mui/material/styles/createPalette" {
     blank: string;
     label: string;
     lightLabel: string;
+    placeholder: string;
   }
 
   export interface Palette {
@@ -17,7 +18,7 @@ declare module "@mui/material/styles/createPalette" {
     };
 
     border: {
-      greyAlert: string;
+      lightGray: string;
     };
   }
 
@@ -25,10 +26,11 @@ declare module "@mui/material/styles/createPalette" {
     bg: {
       blank: string;
       secondary: string;
+      disabled: string;
     };
 
     border: {
-      greyAlert: string;
+      lightGray: string;
     };
   }
 }
@@ -40,7 +42,6 @@ const mainColors = {
   navyBlue: "#0A1F44",
   gray: "#4E5D78",
   lightGray: "#4E5D78",
-  disabled: "repeating-linear-gradient( -45deg, #eeeeee73, #eeeeee73 1px, #c4ddfdad 1px, #c4ddfda1 7px )"
 };
 
 const lightColors = {
@@ -53,6 +54,9 @@ const lightColors = {
 const bgColors = {
   blank: "#FFFFFF",
   secondary: "#F7F8FD",
+  lightGray: "#B3B9C4",
+  lightestGray: "#EAEAEA40",
+  disabled: "repeating-linear-gradient( -45deg, #bfbfbf8f, #bfbfbf8f 1px, #c4ddfdad 1px, #c4ddfda1 7px )"
 };
 
 const additionalColors = {
@@ -72,15 +76,13 @@ const additionalColors = {
 const errorColors = {
   error: "#F43319",
   secondaryError: "#DB230A",
-  errorDisabled: "rgba(244, 51, 25, 0.4)",
+  errorDisabled: "rgba(244, 51, 25, 0.06)",
   warning: "#FFCC00",
   secondaryWarning: "#FFE375",
   warningDisabled: "rgba(255, 204, 0, 0.4)",
 };
 
-
-
-const skyBlue = "#F7F8FD";
+const placeholderGray = "#8E98A9";
 
 const black = "#000000";
 const white = "#FFFFFF";
@@ -88,7 +90,7 @@ const white = "#FFFFFF";
 const labelGrey = "#4E5D78";
 const lightLabelGrey = "#8E8E93";
 const disabledGrey = "rgba(78, 93, 120, 0.6)";
-const greyAlert = "rgba(78, 93, 120, 0.34)";
+const lightGray = "rgba(64, 72, 214, 0.4)";
 
 const mode: PaletteMode = "light";
 
@@ -120,21 +122,26 @@ const text: TypeText = {
   disabled: disabledGrey,
   blank: white,
   label: labelGrey,
+  placeholder: placeholderGray,
   lightLabel: lightLabelGrey,
 };
 
 const common = {
   black,
   white,
+  gray: mainColors.gray
 };
 
 const bg = {
-  blank: white,
-  secondary: skyBlue,
+  blank: bgColors.blank,
+  secondary: bgColors.secondary,
+  disabled: bgColors.disabled,
+  lightestGray: bgColors.lightestGray,
+  lightGray: bgColors.lightGray
 };
 
 const border = {
-  greyAlert,
+  lightGray,
 };
 
 const palette = {
