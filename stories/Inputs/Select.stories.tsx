@@ -1,9 +1,9 @@
 import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { SelectFieldProps, SelectField } from "../src/components/SelectField";
+import { SelectFieldProps, SelectField } from "../../src/components/SelectField";
 
 const meta: Meta<SelectFieldProps> = {
-  title: "Button",
+  title: "Components/Inputs",
   component: SelectField,
   argTypes: {
     disabled: {

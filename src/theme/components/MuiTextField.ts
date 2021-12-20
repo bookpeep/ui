@@ -5,7 +5,6 @@ const MuiTextField: Components["MuiTextField"] = {
   styleOverrides: {
     root: {
       background: palette.bg.blank,
-      
     },
   },
 

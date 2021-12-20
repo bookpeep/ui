@@ -1,30 +1,10 @@
-import { Components , SelectProps} from "@mui/material";
-import palette from "../palette";
-import { muiDisabled } from "./selectors";
+import { Components } from "@mui/material";
 
-
-const MuiOutlinedInput: Components["MuiOutlinedInput"] = {
+const MuiSelect: Components["MuiSelect"] = {
   styleOverrides: {
-    root: {
-      fieldset: {
-        borderWidth: "1px",
-        borderColor: palette.border.lightGray,
-        borderRadius: "8px",
-        transition: "all .3s",
-      },
-      "&:hover fieldset": {
-        borderColor: palette.border.lightGray + "!important",
-        borderWidth: "1px !important",
-        boxShadow: "0px 8px 34px rgba(10, 31, 68, 0.08)"
-      },
-      "&.Mui-focused fieldset": {
-        borderColor: palette.primary.main + "!important",
-        borderWidth: "1px !important",
-      },
-      [muiDisabled]:{
-        borderRadius: "8px",
-        background: palette.bg.disabled
-      }
+    select: {
+      padding: "14px 12px",
+      minWidth: "100px",
     },
   },
 
@@ -38,4 +18,4 @@ const MuiOutlinedInput: Components["MuiOutlinedInput"] = {
   ],
 };
 
-export default MuiOutlinedInput;
+export default MuiSelect;

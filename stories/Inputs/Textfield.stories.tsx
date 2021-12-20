@@ -3,7 +3,7 @@ import { Meta, Story } from "@storybook/react";
 import { TextFieldProps, TextField } from "@mui/material";
 
 const meta: Meta<TextFieldProps> = {
-  title: "Button",
+  title: "Components/Inputs",
   component: TextField,
   argTypes: {
     disabled: {

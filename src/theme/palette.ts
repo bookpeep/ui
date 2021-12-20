@@ -55,6 +55,7 @@ const bgColors = {
   secondary: "#F7F8FD",
   lightGray: "#B3B9C4",
   lightestGray: "#EAEAEA40",
+  lightBlue: "rgba(196, 221, 253, 0.34)",
   disabled: "repeating-linear-gradient( -45deg, #bfbfbf8f, #bfbfbf8f 1px, #c4ddfdad 1px, #c4ddfda1 7px )"
 };
 
@@ -136,7 +137,8 @@ const bg = {
   secondary: bgColors.secondary,
   disabled: bgColors.disabled,
   lightestGray: bgColors.lightestGray,
-  lightGray: bgColors.lightGray
+  lightGray: bgColors.lightGray,
+  lightBlue: bgColors.lightBlue
 };
 
 const border = {
