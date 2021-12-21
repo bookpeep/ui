@@ -18,10 +18,10 @@ const meta: Meta<ButtonProps> = {
 
 export default meta;
 
-const Template: Story<ButtonProps> = (args) => <Button {...args} />;
+const ButtonTemplate: Story<ButtonProps> = (args) => <Button {...args} />;
 
-export const Default = Template.bind({});
+export const Default = ButtonTemplate.bind({});
 Default.args = { children: "Default button" };
 
-export const Outlined = Template.bind({});
+export const Outlined = ButtonTemplate.bind({});
 Outlined.args = { children: "Outlined button", variant: "outlined" };

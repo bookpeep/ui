@@ -9,6 +9,7 @@ declare module "@mui/material/styles/shadows" {
     primaryButtonHover: string;
     errorButtonHover: string;
     warningButtonHover: string;
+    tableHover: string;
   }
 }
 
@@ -20,6 +21,7 @@ const shadows: Shadows = {
   primaryButtonHover: "0px 12px 34px rgba(36, 43, 168, 0.34)",
   errorButtonHover: "0px 8px 34px rgba(10, 31, 68, 0.08)",
   warningButtonHover: "0px 8px 34px rgba(10, 31, 68, 0.08)",
+  tableHover: "0px 0px 40px rgba(10, 31, 68, 0.12)",
 
   // Default shadows, only change if you know what you doing
   0: "none",
