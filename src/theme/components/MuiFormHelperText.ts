@@ -1,5 +1,4 @@
 import { Components } from "@mui/material";
-import { borderRadius } from "@mui/system";
 import palette from "../palette";
 
 const MuiFormHelperText: Components["MuiFormHelperText"] = {

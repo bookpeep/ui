@@ -1,4 +1,5 @@
 import { PaletteMode, SimplePaletteColorOptions } from "@mui/material";
+
 import { TypeText } from "@mui/material/styles/createPalette";
 
 // declare means you are extending the module
@@ -43,12 +44,12 @@ const mainColors = {
   lightGray: "#4E5D78",
 };
 
-const lightColors = {
-  yellow: "#FCF3E4",
-  red: "#FFE7EB",
-  blue: "#EAF4FF",
-  green: "#E4FAF7",
-};
+// const lightColors = {
+//   yellow: "#FCF3E4",
+//   red: "#FFE7EB",
+//   blue: "#EAF4FF",
+//   green: "#E4FAF7",
+// };
 
 const bgColors = {
   blank: "#FFFFFF",
@@ -56,22 +57,23 @@ const bgColors = {
   lightGray: "#B3B9C4",
   lightestGray: "#EAEAEA40",
   lightBlue: "rgba(196, 221, 253, 0.34)",
-  disabled: "repeating-linear-gradient( -45deg, #bfbfbf8f, #bfbfbf8f 1px, #c4ddfdad 1px, #c4ddfda1 7px )"
+  disabled:
+    "repeating-linear-gradient( -45deg, #bfbfbf8f, #bfbfbf8f 1px, #c4ddfdad 1px, #c4ddfda1 7px )",
 };
 
-const additionalColors = {
-  blue: "#3636CF",
-  secondaryBlue: "#E7E9FF",
-  green: "#53BFB0",
-  secondaryGreen: "#E4FAF7",
-  skyBlue: "#6CA1EA",
-  secondarySkyBlue: "#EEFAFF",
-  tuscany: "#EAAA39",
-  secondaryTuscany: "#FFEED1",
-  purple: "#AD34E5",
-  secondaryPurple: "#F6E3FF",
-  gray: "#919AAB",
-};
+// const additionalColors = {
+//   blue: "#3636CF",
+//   secondaryBlue: "#E7E9FF",
+//   green: "#53BFB0",
+//   secondaryGreen: "#E4FAF7",
+//   skyBlue: "#6CA1EA",
+//   secondarySkyBlue: "#EEFAFF",
+//   tuscany: "#EAAA39",
+//   secondaryTuscany: "#FFEED1",
+//   purple: "#AD34E5",
+//   secondaryPurple: "#F6E3FF",
+//   gray: "#919AAB",
+// };
 
 const errorColors = {
   error: "#F43319",
@@ -129,7 +131,7 @@ const text: TypeText = {
 const common = {
   black,
   white,
-  gray: mainColors.gray
+  gray: mainColors.gray,
 };
 
 const bg = {
@@ -138,7 +140,7 @@ const bg = {
   disabled: bgColors.disabled,
   lightestGray: bgColors.lightestGray,
   lightGray: bgColors.lightGray,
-  lightBlue: bgColors.lightBlue
+  lightBlue: bgColors.lightBlue,
 };
 
 const border = {

@@ -1,6 +1,5 @@
 import { Components } from "@mui/material";
 import palette from "../palette";
-import shadows from "../shadows";
 
 const MuiTableCell: Components["MuiTableCell"] = {
   styleOverrides: {
