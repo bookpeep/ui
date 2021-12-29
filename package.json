@@ -76,6 +76,7 @@
     "react": ">=16"
   },
   "dependencies": {
-    "@fontsource/quicksand": "^4.5.1"
+    "@fontsource/quicksand": "^4.5.1",
+    "moment": "^2.29.1"
   }
 }

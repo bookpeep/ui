@@ -4,8 +4,12 @@ import shadows from "../shadows";
 const MuiCard: Components["MuiCard"] = {
   styleOverrides: {
     root: {
-      boxShadow: shadows.card,
-      borderRadius: "8px",
+      borderRadius: "4px",
+      boxShadow: "none",
+      transition: "all 0.3s",
+      "&:hover": {
+        boxShadow: shadows.card,
+      },
     },
   },
 };

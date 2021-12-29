@@ -87,7 +87,6 @@ const placeholderGray = "#8E98A9";
 const black = "#000000";
 const white = "#FFFFFF";
 
-const labelGrey = "#4E5D78";
 const lightLabelGrey = "#8E8E93";
 const disabledGrey = "rgba(78, 93, 120, 0.6)";
 const lightGray = "rgba(64, 72, 214, 0.4)";
@@ -121,7 +120,7 @@ const text: TypeText = {
   secondary: mainColors.peepBlue,
   disabled: disabledGrey,
   blank: white,
-  label: labelGrey,
+  label: mainColors.gray,
   placeholder: placeholderGray,
   lightLabel: lightLabelGrey,
 };
