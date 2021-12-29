@@ -1,4 +1,3 @@
-import React, { useState } from "react";
 import {
   FormControl,
   FormHelperText,
@@ -7,8 +6,10 @@ import {
   InputLabel,
   OutlinedInput,
 } from "@mui/material";
+import React, { useState } from "react";
 
 import { Eye } from "../icons";
+
 export interface PasswordFieldProps {
   value?: string | number;
   label?: string;
@@ -37,7 +38,11 @@ export function PasswordField(props: PasswordFieldProps) {
               onClick={() => setShowPassword(!showPassword)}
               edge="end"
             >
-              {showPassword ? <Eye color="primary"/> : <Eye color="placeholder" />}
+              {showPassword ? (
+                <Eye color="primary" />
+              ) : (
+                <Eye color="disabled" />
+              )}
             </IconButton>
           </InputAdornment>
         }

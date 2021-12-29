@@ -1,16 +1,15 @@
-import * as React from "react";
 import {
-  Button,
-  Dialog,
   AppBar,
-  Box,
-  IconButton,
-  Typography,
-  Slide,
+  Dialog,
   Grid,
+  IconButton,
+  Slide,
+  Typography,
 } from "@mui/material";
-import { ArrowLeft } from "..";
+import * as React from "react";
+
 import palette from "../theme/palette";
+import { ArrowLeft } from "..";
 
 export interface FullWidthModalProps {
   open: boolean;
@@ -20,7 +19,7 @@ export interface FullWidthModalProps {
   actions?: any;
 }
 
-const Transition = React.forwardRef(function Transition(props, ref) {
+const Transition = React.forwardRef(function Transition(props: any, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
@@ -44,7 +43,7 @@ export function FullWidthModal(props: FullWidthModalProps) {
           elevation={0}
         >
           <Grid container alignItems="center" sx={{ padding: "16px 24px" }}>
-            <Grid item xs={4} align="left">
+            <Grid item xs={4}>
               {onClose && (
                 <IconButton
                   color="inherit"
@@ -55,12 +54,12 @@ export function FullWidthModal(props: FullWidthModalProps) {
                 </IconButton>
               )}
             </Grid>
-            <Grid item xs={4} align="center">
+            <Grid item xs={4}>
               <Typography sx={{ ml: 2, flex: 1 }} variant="h3" component="h3">
                 {title}
               </Typography>
             </Grid>
-            <Grid item xs={4} align="right">
+            <Grid item xs={4}>
               {actions}
             </Grid>
           </Grid>

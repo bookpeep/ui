@@ -1,12 +1,13 @@
-import * as React from "react";
 import {
-  Dialog,
-  Slide,
-  DialogActions,
-  Typography,
   Box,
+  Dialog,
+  DialogActions,
   IconButton,
+  Slide,
+  Typography,
 } from "@mui/material";
+import * as React from "react";
+
 import { Close } from "../icons";
 import palette from "../theme/palette";
 
@@ -19,7 +20,7 @@ export interface ConfirmModalProps {
   description?: string;
 }
 
-const Transition = React.forwardRef(function Transition(props, ref) {
+const Transition = React.forwardRef(function Transition(props: any, ref) {
   return <Slide direction="up" ref={ref} {...props} />;
 });
 
@@ -45,7 +46,7 @@ export function ConfirmModal(props: ConfirmModalProps) {
           <Box sx={{ padding: "24px", marginBottom: "auto" }}>
             <Box sx={{ textAlign: "right", marginBottom: "24px" }}>
               <IconButton onClick={onClose}>
-                <Close fill="red"/>
+                <Close fill="red" />
               </IconButton>
             </Box>
             <Box

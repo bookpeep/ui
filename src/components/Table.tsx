@@ -29,19 +29,19 @@ export function TableComponent(props: TableProps) {
           </TableHead>
         )}
         <TableBody>
-          {items?.map((item, index) => (
+          {items?.map((item: any, index: any) => (
             <TableRow
               key={index}
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
-              {headers?.map((h) => (
+              {headers?.map((header: any) => (
                 <TableCell
-                  style={{ width: h.width || "auto", padding: "14px" }}
-                  key={h.key}
+                  style={{ width: header.width || "auto", padding: "14px" }}
+                  key={header.key}
                   component="th"
                   scope="row"
                 >
-                  {item[h.key]}
+                  {item[header.key]}
                 </TableCell>
               ))}
             </TableRow>
