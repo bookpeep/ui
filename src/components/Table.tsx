@@ -1,10 +1,10 @@
-import * as React from "react";
 import Table from "@mui/material/Table";
 import TableBody from "@mui/material/TableBody";
 import TableCell from "@mui/material/TableCell";
 import TableContainer from "@mui/material/TableContainer";
 import TableHead from "@mui/material/TableHead";
 import TableRow from "@mui/material/TableRow";
+import * as React from "react";
 
 export interface TableProps {
   headers: any;
@@ -20,9 +20,9 @@ export function TableComponent(props: TableProps) {
         {!hideHeader && (
           <TableHead>
             <TableRow>
-              {headers?.map((h) => (
-                <TableCell key={h.key} align={h.align}>
-                  {h.name}
+              {headers?.map((header: any) => (
+                <TableCell key={header.key} align={header.align}>
+                  {header.name}
                 </TableCell>
               ))}
             </TableRow>
