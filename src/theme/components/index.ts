@@ -16,10 +16,11 @@ import MuiFormHelperText from "./MuiFormHelperText";
 import MuiList from "./MuiList";
 import MuiMenu from "./MuiMenu";
 import MuiMenuItem from "./MuiMenuItem";
-import MuiSelect from './MuiSelect';
-import MuiTableHead from './MuiTableHead';
-import MuiTableCell from './MuiTableCell';
-import MuiTableRow from './MuiTableRow';
+import MuiSelect from "./MuiSelect";
+import MuiTableHead from "./MuiTableHead";
+import MuiTableCell from "./MuiTableCell";
+import MuiTableRow from "./MuiTableRow";
+import MuiCard from "./MuiCard";
 
 const components: Components = {
   MuiOutlinedInput,
@@ -41,7 +42,8 @@ const components: Components = {
   MuiTableHead,
   MuiTableCell,
   MuiTableRow,
-  MuiMenuItem
+  MuiMenuItem,
+  MuiCard,
 };
 
 export default components;

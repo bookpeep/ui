@@ -9,20 +9,25 @@ import TableRow from "@mui/material/TableRow";
 export interface TableProps {
   headers: any;
   items: any;
+  hideHeader?: boolean;
 }
 
 export function TableComponent(props: TableProps) {
-  const { headers, items } = props;
+  const { headers, items, hideHeader } = props;
   return (
     <TableContainer>
-      <Table sx={{ minWidth: '100%' }} aria-label="simple table">
-        <TableHead>
-          <TableRow>
-            {headers?.map((h) => (
-              <TableCell key={h.key} align={h.align}>{h.name}</TableCell>
-            ))}
-          </TableRow>
-        </TableHead>
+      <Table sx={{ minWidth: "100%" }} aria-label="simple table">
+        {!hideHeader && (
+          <TableHead>
+            <TableRow>
+              {headers?.map((h) => (
+                <TableCell key={h.key} align={h.align}>
+                  {h.name}
+                </TableCell>
+              ))}
+            </TableRow>
+          </TableHead>
+        )}
         <TableBody>
           {items?.map((item, index) => (
             <TableRow
@@ -30,7 +35,12 @@ export function TableComponent(props: TableProps) {
               sx={{ "&:last-child td, &:last-child th": { border: 0 } }}
             >
               {headers?.map((h) => (
-                <TableCell key={h.key} component="th" scope="row">
+                <TableCell
+                  style={{ width: h.width || "auto", padding: "14px" }}
+                  key={h.key}
+                  component="th"
+                  scope="row"
+                >
                   {item[h.key]}
                 </TableCell>
               ))}

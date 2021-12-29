@@ -10,19 +10,20 @@ import {
 
 import { Eye } from "../icons";
 export interface PasswordFieldProps {
-  value: string | number;
-  label: string;
-  disabled: boolean;
-  error: boolean;
+  value?: string | number;
+  label?: string;
+  disabled?: boolean;
+  error?: boolean;
   helperText?: string;
   placeholder?: string;
+  fullWidth?: boolean;
 }
 
 export function PasswordField(props: PasswordFieldProps) {
-  const { error, label, value, helperText } = props;
+  const { error, label, value, helperText, fullWidth } = props;
   const [showPassword, setShowPassword] = useState(false);
   return (
-    <FormControl variant="outlined">
+    <FormControl fullWidth={fullWidth} variant="outlined">
       <InputLabel htmlFor="outlined-adornment-password">{label}</InputLabel>
       <OutlinedInput
         id="outlined-adornment-password"

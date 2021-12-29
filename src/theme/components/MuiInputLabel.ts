@@ -5,6 +5,7 @@ import { muiFocused } from "./selectors";
 const MuiInputLabel: Components["MuiInputLabel"] = {
   styleOverrides: {
     root: {
+      color: palette.text.primary,
       fontWeight: "600",
       fontSize: "12px",
       lineHeight: "15px",
