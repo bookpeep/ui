@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import {
   AppBar,
   Dialog,
@@ -6,10 +8,9 @@ import {
   Slide,
   Typography,
 } from "@mui/material";
-import * as React from "react";
 
-import palette from "../theme/palette";
 import { ArrowLeft } from "..";
+import palette from "../theme/palette";
 
 export interface FullWidthModalProps {
   open: boolean;
@@ -55,7 +56,11 @@ export function FullWidthModal(props: FullWidthModalProps) {
               )}
             </Grid>
             <Grid item xs={4}>
-              <Typography sx={{ ml: 2, flex: 1 }} variant="h3" component="h3">
+              <Typography
+                sx={{ textAlign: "center" }}
+                variant="h3"
+                component="h3"
+              >
                 {title}
               </Typography>
             </Grid>
