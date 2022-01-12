@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import {
   AppBar,
   Dialog,
@@ -6,10 +8,9 @@ import {
   Slide,
   Typography,
 } from "@mui/material";
-import * as React from "react";
 
+import { Close } from "..";
 import palette from "../theme/palette";
-import { ArrowLeft } from "..";
 
 export interface ModalProps {
   open: boolean;
@@ -17,6 +18,7 @@ export interface ModalProps {
   onClose: any;
   children: any;
   actions?: any;
+  headerActions?: any;
 }
 
 const Transition = React.forwardRef(function Transition(props: any, ref) {
@@ -24,11 +26,18 @@ const Transition = React.forwardRef(function Transition(props: any, ref) {
 });
 
 export function Modal(props: ModalProps) {
-  const { open, onClose, children, actions, title } = props;
+  const { open, onClose, children, title, headerActions } = props;
 
   return (
     <div>
-      <Dialog open={open} onClose={onClose} TransitionComponent={Transition}>
+      <Dialog
+        open={open}
+        onClose={onClose}
+        TransitionComponent={Transition}
+        PaperProps={{
+          sx: { width: "100%", maxWidth: "500px" },
+        }}
+      >
         <AppBar
           sx={{
             position: "relative",
@@ -38,27 +47,29 @@ export function Modal(props: ModalProps) {
           elevation={0}
         >
           <Grid container alignItems="center" sx={{ padding: "16px 24px" }}>
-            <Grid item xs={4}>
+            <Grid item xs={8}>
+              {headerActions ? (
+                headerActions
+              ) : (
+                <Typography variant="h3" component="h3">
+                  {title}
+                </Typography>
+              )}
+            </Grid>
+            <Grid item xs={4} sx={{ textAlign: "right" }}>
               {onClose && (
                 <IconButton
                   color="inherit"
                   onClick={() => onClose()}
                   aria-label="close"
                 >
-                  <ArrowLeft />
+                  <Close />
                 </IconButton>
               )}
             </Grid>
-            <Grid item xs={4}>
-              <Typography sx={{ ml: 2, flex: 1 }} variant="h3" component="h3">
-                {title}
-              </Typography>
-            </Grid>
-            <Grid item xs={4}>
-              {actions}
-            </Grid>
           </Grid>
         </AppBar>
+
         {children}
       </Dialog>
     </div>
