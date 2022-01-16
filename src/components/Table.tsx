@@ -110,7 +110,14 @@ export function TableComponent(props: TableProps) {
         </TableBody>
       </Table>
       {hasPagination && (
-        <Grid container>
+        <Grid
+          container
+          sx={{
+            borderTop: `1px solid ${palette.common.gray}25`,
+            paddingTop: "18px",
+            justifyContent: "center",
+          }}
+        >
           <Grid item xs={3} />
           <Grid item xs={6}>
             <Pagination
