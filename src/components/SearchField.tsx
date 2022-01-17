@@ -1,27 +1,26 @@
-import React from "react";
+import { DeleteX, MagnifyingGlass } from "../icons";
 import {
   FormControl,
   IconButton,
   InputAdornment,
   OutlinedInput,
 } from "@mui/material";
-import { MagnifyingGlass, DeleteX } from "../icons";
+
+import React from "react";
 import palette from "../theme/palette";
+
 export interface SearchFieldProps {
   value: any;
   label: string;
-  disabled: boolean;
   placeholder?: string;
 }
 
 export function SearchField(props: SearchFieldProps) {
-  const { label, value, disabled } = props;
+  const { label, value } = props;
   return (
     <FormControl variant="outlined">
       <OutlinedInput
         type="text"
-        value={value}
-        disabled={disabled}
         placeholder={label}
         sx={{
           background: palette.bg.lightestGray,
@@ -51,6 +50,7 @@ export function SearchField(props: SearchFieldProps) {
             </InputAdornment>
           )
         }
+        {...props}
       />
     </FormControl>
   );
