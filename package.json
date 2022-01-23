@@ -5,7 +5,7 @@
   "module": "dist/ui.esm.js",
   "repository": {
     "type": "git",
-    "url": "git+https://gitlab.com/bookpeep/ui.git"
+    "url": "git+https://github.com/bookpeep/ui.git"
   },
   "size-limit": [
     {
