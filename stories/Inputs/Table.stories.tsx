@@ -1,6 +1,7 @@
-import React from "react";
 import { Meta, Story } from "@storybook/react";
-import { TableProps, TableComponent } from "../../src/components/Table";
+import { TableComponent, TableProps } from "../../src/components/Table";
+
+import React from "react";
 
 const meta: Meta<TableProps> = {
   title: "Components/Inputs",
@@ -66,4 +67,13 @@ export const Table = TableTemplate.bind({});
 Table.args = {
   headers: exampleHeader,
   items: exampleItems,
+  hasPagination: true,
+  paginationProps:{
+    rowsPerPage: [10, 20, 30],
+    count: 60,
+    handleChangeRow: (page) => {console.log(page);
+    },
+    rowPerPage: 10,
+    page: 2,
+  }
 };
