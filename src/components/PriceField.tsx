@@ -43,7 +43,7 @@ const priceInput = {
 };
 
 export function PriceField(props: PriceFieldProps) {
-  const { label, value, disabled, currency = "KD", labelId } = props;
+  const { label, currency = "KD", labelId } = props;
   return (
     <FormControl variant="outlined">
       <InputLabel id={labelId || "selectLabel"}>{props.label}</InputLabel>
