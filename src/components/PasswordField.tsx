@@ -47,6 +47,7 @@ export function PasswordField(props: PasswordFieldProps) {
           </InputAdornment>
         }
         label={label}
+        {...props}
       />
       {helperText && (
         <FormHelperText error={error}>{helperText}</FormHelperText>
