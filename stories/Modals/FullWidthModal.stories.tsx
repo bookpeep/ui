@@ -1,9 +1,10 @@
-import React, { useState } from "react";
-import { Meta, Story } from "@storybook/react";
 import {
   FullWidthModal,
   FullWidthModalProps,
 } from "../../src/components/FullWidthModal";
+import { Meta, Story } from "@storybook/react";
+import React, { useState } from "react";
+
 import { Button } from "@mui/material";
 
 const meta: Meta<FullWidthModalProps> = {
