@@ -44,6 +44,7 @@ export function FullWidthModal(props: FullWidthModalProps) {
           sx={{
             borderBottom: `1px solid ${palette.common.gray}25`,
             backgroundColor: "white",
+            minHeight: "81px",
           }}
           elevation={0}
           position={"sticky"}
