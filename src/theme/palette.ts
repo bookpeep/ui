@@ -3,6 +3,8 @@ import { PaletteMode, SimplePaletteColorOptions } from "@mui/material";
 import { TypeText } from "@mui/material/styles/createPalette";
 
 // declare means you are extending the module
+//#0054B1 missing color user in services table expand
+//#F5F4F4 services option table row bg
 declare module "@mui/material/styles/createPalette" {
   export interface TypeText {
     blank: string;

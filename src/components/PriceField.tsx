@@ -1,12 +1,13 @@
-import React from "react";
 import {
   FormControl,
   InputAdornment,
   InputLabel,
   OutlinedInput,
 } from "@mui/material";
-import palette from "../theme/palette";
+
+import React from "react";
 import { muiDisabled } from "../theme/components/selectors";
+import palette from "../theme/palette";
 
 export interface PriceFieldProps {
   value: any;
@@ -29,33 +30,31 @@ const priceInput = {
       fontWeight: "500",
       fontSize: "14px",
       lineHeight: "24px",
-      color: palette.common.gray
+      color: palette.common.gray,
     },
   },
   input: {
     flex: "0 0 calc(100% - 72px)",
     background: palette.bg.blank,
     [muiDisabled]: {
-      background: palette.bg.disabled
-    }
+      background: palette.bg.disabled,
+    },
   },
 };
 
 export function PriceField(props: PriceFieldProps) {
-  const { label, value, disabled, currency = "KD", labelId } = props;
+  const { label, currency = "KD", labelId } = props;
   return (
     <FormControl variant="outlined">
       <InputLabel id={labelId || "selectLabel"}>{props.label}</InputLabel>
       <OutlinedInput
         type="text"
-        value={value}
-        disabled={disabled}
         placeholder={label}
         sx={priceInput}
-        label={label}
         startAdornment={
           <InputAdornment position="start">{currency}</InputAdornment>
         }
+        {...props}
       />
     </FormControl>
   );

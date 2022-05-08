@@ -1,3 +1,5 @@
+import * as React from "react";
+
 import {
   AppBar,
   Dialog,
@@ -6,10 +8,9 @@ import {
   Slide,
   Typography,
 } from "@mui/material";
-import * as React from "react";
 
-import palette from "../theme/palette";
 import { ArrowLeft } from "..";
+import palette from "../theme/palette";
 
 export interface FullWidthModalProps {
   open: boolean;
@@ -36,26 +37,26 @@ export function FullWidthModal(props: FullWidthModalProps) {
       >
         <AppBar
           sx={{
-            position: "relative",
             borderBottom: `1px solid ${palette.common.gray}25`,
+            backgroundColor: "white",
           }}
-          color="transparent"
           elevation={0}
+          position={"sticky"}
         >
           <Grid container alignItems="center" sx={{ padding: "16px 24px" }}>
             <Grid item xs={4}>
               {onClose && (
-                <IconButton
-                  color="inherit"
-                  onClick={() => onClose()}
-                  aria-label="close"
-                >
-                  <ArrowLeft />
+                <IconButton onClick={() => onClose()} aria-label="close">
+                  <ArrowLeft sx={{ fontColor: "black" }} />
                 </IconButton>
               )}
             </Grid>
             <Grid item xs={4}>
-              <Typography sx={{ ml: 2, flex: 1 }} variant="h3" component="h3">
+              <Typography
+                sx={{ textAlign: "center", ml: 2, flex: 1, color: "black" }}
+                variant="h3"
+                component="h3"
+              >
                 {title}
               </Typography>
             </Grid>
