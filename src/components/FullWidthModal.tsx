@@ -34,6 +34,9 @@ export function FullWidthModal(props: FullWidthModalProps) {
         open={open}
         onClose={onClose}
         TransitionComponent={Transition}
+        PaperProps={{
+          sx: { overflow: "hidden" },
+        }}
       >
         <AppBar
           sx={{
