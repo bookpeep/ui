@@ -5,6 +5,7 @@ import {
   Dialog,
   Grid,
   IconButton,
+  PaperProps,
   Slide,
   Typography,
 } from "@mui/material";
@@ -19,6 +20,7 @@ export interface ModalProps {
   children: any;
   actions?: any;
   headerActions?: any;
+  PaperProps: PaperProps;
 }
 
 const Transition = React.forwardRef(function Transition(props: any, ref) {
@@ -36,6 +38,7 @@ export function Modal(props: ModalProps) {
         TransitionComponent={Transition}
         PaperProps={{
           sx: { width: "100%", maxWidth: "500px" },
+          ...props.PaperProps,
         }}
       >
         <AppBar
