@@ -18,7 +18,7 @@ import {
   ChevronRight,
   DoubleChevronLeft,
   DoubleChevronRight,
-} from "..";
+} from "../icons";
 
 import React from "react";
 import palette from "../theme/palette";

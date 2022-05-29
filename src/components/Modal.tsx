@@ -10,7 +10,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import { Close } from "..";
+import { Close } from "../icons";
 import palette from "../theme/palette";
 
 export interface ModalProps {

@@ -9,7 +9,7 @@ import {
   Typography,
 } from "@mui/material";
 
-import { ArrowLeft } from "..";
+import { ArrowLeft } from "../icons";
 import palette from "../theme/palette";
 
 export interface FullWidthModalProps {
