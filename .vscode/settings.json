@@ -1,0 +1,7 @@
+{
+  "[javascript][javascriptreact][typescript][typescriptreact][css][scss][html][json][jsonc][markdown]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.tabSize": 2,
+  "sort-imports.default-sort-style": "module"
+}
