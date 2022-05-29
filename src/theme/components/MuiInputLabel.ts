@@ -1,11 +1,12 @@
 import { Components } from "@mui/material";
-import { muiFocused } from "./selectors";
+
 import palette from "../palette";
+import { muiFocused } from "./selectors";
 
 const MuiInputLabel: Components["MuiInputLabel"] = {
   styleOverrides: {
     root: {
-      color: palette.text.primary,
+      color: palette.common.gray,
       fontWeight: "600",
       fontSize: "12px",
       lineHeight: "15px",
@@ -14,10 +15,13 @@ const MuiInputLabel: Components["MuiInputLabel"] = {
       msTransform: "translate(12px, -7px) scale(.9)",
       transform: "translate(12px, -7px) scale(.9)",
       [muiFocused]: {
-        color: palette.text.primary,
-      },
-    },
+        color: palette.text.primary
+      }
+    }
   },
+  defaultProps: {
+    shrink: true
+  }
 };
 
 export default MuiInputLabel;
