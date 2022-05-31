@@ -1,4 +1,5 @@
 import { Components } from "@mui/material";
+
 import palette from "../palette";
 import shadows from "../shadows";
 import { muiDisabled } from "./selectors";
@@ -7,9 +8,8 @@ const MuiButton: Components["MuiButton"] = {
   styleOverrides: {
     root: {
       minHeight: "48px",
-      minWidth: "120px",
-      borderRadius: "8px",
-    },
+      borderRadius: "8px"
+    }
   },
 
   defaultProps: {
