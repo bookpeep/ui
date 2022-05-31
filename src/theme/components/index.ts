@@ -7,6 +7,7 @@ import MuiButton from "./MuiButton";
 import MuiCard from "./MuiCard";
 import MuiCssBaseline from "./MuiCssBaseline";
 import MuiDatePicker from "./MuiDatePicker";
+import MuiDateRangePickerDay from "./MuiDateRangePickerDay";
 import MuiFilledInput from "./MuiFilledInput";
 import MuiFormHelperText from "./MuiFormHelperText";
 import MuiInputBase from "./MuiInputBase";
@@ -16,6 +17,7 @@ import MuiLoadingButton from "./MuiLoadingButton";
 import MuiMenu from "./MuiMenu";
 import MuiMenuItem from "./MuiMenuItem";
 import MuiOutlinedInput from "./MuiOutlinedInput";
+import MuiPickerStaticWrapper from "./MuiPickerStaticWrapper";
 import MuiSelect from "./MuiSelect";
 import MuiTab from "./MuiTab";
 import MuiTableCell from "./MuiTableCell";
@@ -27,31 +29,33 @@ import MuiToggleButton from "./MuiToggleButton";
 import MuiToggleButtonGroup from "./MuiToggleButtonGroup";
 
 const components: Components = {
-  MuiOutlinedInput,
-  MuiAutocomplete,
   MuiAccordion,
-  MuiDatePicker,
   MuiAlert,
+  MuiAutocomplete,
   MuiButton,
+  MuiCard,
   MuiCssBaseline,
+  MuiDatePicker,
+  MuiDateRangePickerDay,
   MuiFilledInput,
-  MuiTab,
-  MuiTabs,
-  MuiToggleButton,
-  MuiInputLabel,
-  MuiToggleButtonGroup,
-  MuiInputBase,
   MuiFormHelperText,
-  MuiSelect,
-  MuiTextField,
+  MuiInputBase,
+  MuiInputLabel,
   MuiList,
   MuiLoadingButton,
   MuiMenu,
-  MuiTableHead,
-  MuiTableCell,
-  MuiTableRow,
   MuiMenuItem,
-  MuiCard
+  MuiOutlinedInput,
+  MuiPickerStaticWrapper,
+  MuiSelect,
+  MuiTab,
+  MuiTableCell,
+  MuiTableHead,
+  MuiTableRow,
+  MuiTabs,
+  MuiTextField,
+  MuiToggleButton,
+  MuiToggleButtonGroup
 };
 
 export default components;
