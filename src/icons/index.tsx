@@ -11,6 +11,10 @@ export { ArrowLeft } from "./Arrow";
 
 export { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from "./Chevron";
 
+export { default as DayView } from "./DayView";
+export { default as ThreeDayView } from "./ThreeDayView";
+export { default as WeekView } from "./WeekView";
+
 export const DoubleChevronRight = createSvgIcon(
   <>
     <path d="M11.2926 2.33905C10.9023 2.72972 10.9025 3.36289 11.2932 3.75327L19.5844 12.0384L11.2932 20.3235C10.9025 20.7139 10.9023 21.3471 11.2926 21.7377C11.683 22.1284 12.3162 22.1286 12.7068 21.7383L21.2815 13.1699C21.2813 13.1701 21.2817 13.1698 21.2815 13.1699C21.43 13.0216 21.5485 12.8449 21.6289 12.651C21.7095 12.4568 21.751 12.2486 21.751 12.0384C21.751 11.8281 21.7095 11.62 21.6289 11.4258C21.5485 11.2319 21.4306 11.0557 21.282 10.9074C21.2822 10.9075 21.2819 10.9072 21.282 10.9074L12.7068 2.33853C12.3162 1.94815 11.683 1.94838 11.2926 2.33905Z" />
