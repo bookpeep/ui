@@ -1,5 +1,4 @@
-import { createSvgIcon, styled } from "@mui/material";
-
+import { createSvgIcon } from "@mui/material";
 import React from "react";
 
 // Custom props
@@ -8,21 +7,9 @@ export { default as MorningSun } from "./extended/MorningSun";
 export { default as EveningCrescent } from "./extended/EveningCrescent";
 export { default as Heart } from "./extended/Heart";
 
-export const ArrowUp = createSvgIcon(
-  <path d="M16.5527 10.947C16.8456 11.2399 17.3204 11.2399 17.6133 10.947C17.9062 10.6541 17.9062 10.1792 17.6133 9.88634L12.9467 5.21967C12.8179 5.09092 12.654 5.01877 12.4859 5.00321C12.4627 5.00107 12.4395 5 12.4163 5C12.4162 5 12.4161 5 12.416 5C12.2022 5 12.0093 5.08947 11.8727 5.23301L7.21934 9.88634C6.92645 10.1792 6.92645 10.6541 7.21934 10.947C7.51224 11.2399 7.98711 11.2399 8.28 10.947L11.666 7.56099L11.666 19.0833C11.666 19.4975 12.0018 19.8333 12.416 19.8333C12.8302 19.8333 13.166 19.4975 13.166 19.0833L13.166 7.56033L16.5527 10.947Z" />,
-  "ArrowUp"
-);
-export const ArrowRight = styled(ArrowUp)({ transform: "rotate(90deg)" });
-export const ArrowDown = styled(ArrowUp)({ transform: "rotate(180deg)" });
-export const ArrowLeft = styled(ArrowUp)({ transform: "rotate(270deg)" });
+export { ArrowLeft } from "./Arrow";
 
-export const ChevronUp = createSvgIcon(
-  <path d="M5.21967 15.2803C5.51256 15.5732 5.98744 15.5732 6.28033 15.2803L11.75 9.81066L17.2197 15.2803C17.5126 15.5732 17.9874 15.5732 18.2803 15.2803C18.5732 14.9874 18.5732 14.5126 18.2803 14.2197L12.2803 8.21967C11.9874 7.92678 11.5126 7.92678 11.2197 8.21967L5.21967 14.2197C4.92678 14.5126 4.92678 14.9874 5.21967 15.2803Z" />,
-  "ChevronUp"
-);
-export const ChevronRight = styled(ChevronUp)({ transform: "rotate(90deg)" });
-export const ChevronDown = styled(ChevronUp)({ transform: "rotate(180deg)" });
-export const ChevronLeft = styled(ChevronUp)({ transform: "rotate(270deg)" });
+export { ChevronDown, ChevronLeft, ChevronRight, ChevronUp } from "./Chevron";
 
 export const DoubleChevronRight = createSvgIcon(
   <>
