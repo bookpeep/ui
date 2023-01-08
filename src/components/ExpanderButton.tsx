@@ -1,6 +1,8 @@
-import React, { memo } from "react";
 import { Button, ButtonProps } from "@mui/material";
 import { styled } from "@mui/material/styles";
+import React, { memo } from "react";
+
+import { dontForwardProps } from "../helpers/dontForwardProps";
 import { ChevronDown } from "../icons";
 
 const endIcon = "& .MuiButton-endIcon";
@@ -9,9 +11,10 @@ type ExpanderButtonProps = ButtonProps & {
   expanded: boolean;
 };
 
-const ExpanderButton = styled((props: ExpanderButtonProps) => (
-  <Button endIcon={<ChevronDown />} {...props} />
-))<ExpanderButtonProps>(({ expanded, theme }) => ({
+const ExpanderButton = styled(
+  (props: ExpanderButtonProps) => <Button endIcon={<ChevronDown />} {...props} />,
+  dontForwardProps("expanded")
+)<ExpanderButtonProps>(({ expanded, theme }) => ({
   [endIcon]: {
     transition: theme.transitions.create(["transform"], {
       duration: theme.transitions.duration.shorter,
